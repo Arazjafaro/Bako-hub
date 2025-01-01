@@ -1,360 +1,109 @@
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Arazjafaro/Bako-hub/refs/heads/main/BAKO%20HUB')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-local Tab = Window:MakeTab({
-	Name = "bako hub",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "scanner pink!",
-	Callback = function()
-Sure!
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/the%20tablet.luau"))()```
-      		print("button pressed")
-  	end    
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Arazjafaro/Bako-hub/main/BAKO%20HUB"))()
+local Window = OrionLib:MakeWindow({
+    Name = "Bako Hub",
+    HidePremium = false,
+    SaveConfig = true,
+    ConfigFolder = "BakoHub"
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "shears!",
-	Callback = function()
-	Why is this so long?
-
-```-- Spawner Customizations --
-_G.Luck = 100 -- The chance of shears spawning in the game
-_G.Spawns = false -- If the shears can spawn naturally in the game
--- Tool Customizations --
-_G.Durability = 5 -- How much durability it will have until it breaks
-_G.MaxDurability = 5 -- The max durability if you enable regeneration
-_G.InfiniteUses = false -- If The Shears have infinite uses and cannot break
-_G.DurabilityTakenEachSnip = 0.25 -- How much each snip you take with the shears takes from the durability
-_G.SnipSpeed = 1.25 -- The speed of the snipping
--- Regeneration --
-_G.Regens = true -- If the shears regenerate after being used
-_G.RegenSpeed = 1 -- How fast the shears will regenerate after being used
-_G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen amount of time
--- Loadstring --
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()```
-      		print("button pressed")
-  	end    
+local Tools = Window:MakeTab({
+    Name = "Items",
+    Icon = "rbxassetid://85783554733206",
+    PremiumOnly = false
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "seek gun",
-	Callback = function()
-	Seekibidy Gun
-
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Star jug",
-	Callback = function()
-	The laziness of A-1000 be like:
-
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "giggle!",
-	Callback = function()
-	Giggles modifier if it was real: “Giggle Outbreak!”
-
-```luau
-getgenv().GIGGLE_SPAWN_CONFIG = {
-     Damage = 6,
-     AttackingTime = math.random(7, 10), -- The time giggle will be attacking for.
-     FallSpeed = 3,        -- Speed for when giggle spawns, can be mininum 2 and how high you want
-     
-     Stunnable = true,    -- If set to true, Giggle will be stunnable with glowstick
-     StunTime = 5, -- The time giggle will be stun for
-     
-     RagdollThrowForce = 50,    -- The Ragdoll's Force when its thrown
-     RagdollDissapears = true,  -- If set to true the ragdoll will dissapear once giggle finishes attacking.
-  
-     RoomSpawning = {
-          Enabled = true   -- If set to false, giggle will spawn around the player.
-     },
-     
-     PlayerSpawning = { -- This table will be used if Room Spawning is Disabled
-          MinRadius = -20,  -- The minimum distance giggle can spawn from the player.
-          MaxRadius = 20.  --  The maximum distance giggle can spawn from the player.
-     },
-     
-     SpawningKey = { -- Key for Spawning
-          Enabled = false,  -- If enabled once the key is pressed, giggle will spawn.
-          Key = "G"    -- Key that is used for spawning giggle
-     }
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Test/refs/heads/main/Doors/GiggleSpawn.lua"))()```
-      		print("button pressed")
-  	end    
-})
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Inf crucifixanything",
-	Callback = function()
-	--[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-_G.Uses = 99999999999
-_G.Range = 999
-_G.OnAnything = true
-_G.Fail = false
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))() --no deivid-- --execute this instead--
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "troll face!",
-	Callback = function()
-	Trolling everyone whose name starts with the letter "u"
-
-```loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "spiral lighter",
-	Callback = function()
-	<@&1314196270277066772> 
-here's the mischievous Lighter script (I somehow got confused with mischievous candle)
-```lua
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-
-local highlightColor = Color3.new(1, 0, 0)
-local explosionSoundId = "rbxassetid://3802269741"
-local explosionTimeLimit = 1200
-
-local function applyToolEffects(tool)
-    if tool.Name == "Lighter" then
-        local handle = tool:FindFirstChild("Handle")
-        if handle then
-            handle.Color = Color3.new(1, 0, 0)
-            local soundOpen = handle:FindFirstChild("sound_open")
-            if soundOpen and soundOpen:IsA("Sound") then
-                soundOpen.SoundId = explosionSoundId
-            end
-
-            for _, descendant in ipairs(handle:GetDescendants()) do
-                if descendant:IsA("BasePart") or descendant:IsA("ParticleEmitter") or descendant:IsA("PointLight") then
-                    descendant.Color = Color3.new(1, 0, 0)
-                    if descendant:IsA("ParticleEmitter") then
-                        descendant.Texture = "rbxassetid://110886007258155"
-                    elseif descendant:IsA("PointLight") then
-                        descendant.Color = Color3.new(1, 0, 0)
-                        descendant.Brightness = 1.5
-                        descendant.Range = 16
-                    end
-                end
-            end
-        end
-
-        tool.TextureId = "rbxassetid://112508503632935"
-
-        task.spawn(function()
-            local heldTime = 0
-            while tool and tool.Parent and Players.LocalPlayer.Character:FindFirstChild(tool.Name) do
-                task.wait(1)
-                heldTime = heldTime + 1
-                if heldTime >= explosionTimeLimit then
-                    local explosion = Instance.new("Explosion")
-                    explosion.Position = Players.LocalPlayer.Character.HumanoidRootPart.Position
-                    explosion.Parent = workspace
-                    local explosionSound = Instance.new("Sound")
-                    explosionSound.SoundId = explosionSoundId
-                    explosionSound.PlayOnRemove = true
-                    explosionSound.Parent = explosion
-                    explosionSound:Destroy()
-                    Players.LocalPlayer.Character.Humanoid.Health = 0
-                end
-            end
-        end)
+-- Pink Scanner
+Tools:AddButton({
+    Name = "Pink Scanner",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/main/the%20tablet.luau"))()
+        print("Pink Scanner Initiated.")
     end
-end
+})
 
-local function highlightFakeDoors()
-    for _, model in ipairs(workspace:GetDescendants()) do
-        if model:IsA("Model") and model.Name == "DoorFake" then
-            for _, part in ipairs(model:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    local highlight = Instance.new("Highlight")
-                    highlight.FillColor = highlightColor
-                    highlight.OutlineTransparency = 1
-                    highlight.Parent = part
-                end
-            end
-        end
+-- Shears
+Tools:AddButton({
+    Name = "Shears",
+    Callback = function()
+        _G.Luck = 100
+        _G.Spawns = false
+        _G.Durability = 5
+        _G.MaxDurability = 5
+        _G.InfiniteUses = false
+        _G.DurabilityTakenEachSnip = 0.25
+        _G.SnipSpeed = 1.25
+        _G.Regens = true
+        _G.RegenSpeed = 1
+        _G.RegenAmount = 0.1
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()
+        print("Shears initiated.")
     end
+})
 
-    workspace.DescendantAdded:Connect(function(descendant)
-        if descendant:IsA("Model") and descendant.Name == "DoorFake" then
-            for _, part in ipairs(descendant:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    local highlight = Instance.new("Highlight")
-                    highlight.FillColor = highlightColor
-                    highlight.OutlineTransparency = 1
-                    highlight.Parent = part
-                end
-            end
-        end
-    end)
-end
-
-Players.LocalPlayer.Backpack.ChildAdded:Connect(applyToolEffects)
-workspace.DescendantAdded:Connect(function(descendant)
-    if descendant:IsA("Tool") then
-        applyToolEffects(descendant)
+-- Seek Gun
+Tools:AddButton({
+    Name = "Seek Gun",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()
+        print("Seek Gun Initiated!")
     end
-end)
-
-highlightFakeDoors()
-```
-      		print("button pressed")
-  	end    
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "moon light lighter",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/obf_tzC4VKEz8q97nq1JEmMWTW2Ke86o75zoN5gE6DOB475Gn4H99HoKS9i7sSa4zU95.lua.txt"))()
-      		print("button pressed")
-  	end    
+-- Star Jug
+Tools:AddButton({
+    Name = "Star Jug",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/StarJug.lua"))()
+        print("Star Jug initiated.")
+    end
 })
 
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
+-- MoonLight Lighter
+Tools:AddButton({
+    Name = "MoonLight Lighter by teils",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/main/obf_tzC4VKEz8q97nq1JEmMWTW2Ke86o75zoN5gE6DOB475Gn4H99HoKS9i7sSa4zU95.lua.txt"))()
+        print("Moonlight Lighter Initiated.")
+    end
 })
 
---[[
+local Entities = Window:MakeTab({
+    Name = "Entity Spawner",
+    Icon = "rbxassetid://137793513621525",
+    PremiumOnly = false
+})
+
+-- Giggle spawner
+Entities:AddButton({
+    Name = "Giggle!",
+    Callback = function()
+        getgenv().GIGGLE_SPAWN_CONFIG = {
+            Damage = 6,
+            AttackingTime = math.random(7, 10),
+            FallSpeed = 3,
+            Stunnable = true,
+            StunTime = 5,
+            RagdollThrowForce = 50,
+            RagdollDissapears = true,
+            RoomSpawning = { Enabled = true },
+            PlayerSpawning = { MinRadius = -20, MaxRadius = 20 },
+            SpawningKey = { Enabled = false, Key = "G" }
+        }
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Test/main/Doors/GiggleSpawn.lua"))()
+        print("Giggle spawned!")
+    end
+})
+
+-- Troll Face
+Entities:AddButton({
+    Name = "Troll Face",
+    Callback = function()
+        loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()
+        print("get ready to get trolled")
+    end
+})
 Tab:AddButton({
 	Name = "VIRIDIS RIFT",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "wonder bottle!",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Wonder%20Bottle%20OFICIAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "  crucifix anything Christmas",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Modhub-assets/refs/heads/main/ChristmasCrucifixFunctionless.lua"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "red crucifix",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "VIRIDIS RIFT",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "dozer spawn",
 	Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
       		print("button pressed")
@@ -365,374 +114,6 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+-- Initiate orion library. This is meant to be put at the end of the code.
 OrionLib:Init()
-
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Arazjafaro/Bako-hub/refs/heads/main/BAKO%20HUB')))()
-local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-local Tab = Window:MakeTab({
-	Name = "bako hub",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-Tab:AddButton({
-	Name = "scanner pink!",
-	Callback = function()
-Sure!
-```lua
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Matthew201322/Doors-Scriptee/refs/heads/main/the%20tablet.luau"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "shears!",
-	Callback = function()
-	Why is this so long?
-
-```-- Spawner Customizations --
-_G.Luck = 100 -- The chance of shears spawning in the game
-_G.Spawns = false -- If the shears can spawn naturally in the game
--- Tool Customizations --
-_G.Durability = 5 -- How much durability it will have until it breaks
-_G.MaxDurability = 5 -- The max durability if you enable regeneration
-_G.InfiniteUses = false -- If The Shears have infinite uses and cannot break
-_G.DurabilityTakenEachSnip = 0.25 -- How much each snip you take with the shears takes from the durability
-_G.SnipSpeed = 1.25 -- The speed of the snipping
--- Regeneration --
-_G.Regens = true -- If the shears regenerate after being used
-_G.RegenSpeed = 1 -- How fast the shears will regenerate after being used
-_G.RegenAmount = 0.1 -- How much durability it will regenerate after the chosen amount of time
--- Loadstring --
-loadstring(game:HttpGet("https://raw.githubusercontent.com/iimateiYT/Scripts/main/Buffed%20Shears%20On%20Everything.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "seek gun",
-	Callback = function()
-	Seekibidy Gun
-
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/main/seekgun.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Star jug",
-	Callback = function()
-	The laziness of A-1000 be like:
-
-```loadstring(game:HttpGet("https://raw.githubusercontent.com/notpoiu/Scripts/refs/heads/main/StarJug.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "giggle!",
-	Callback = function()
-	Giggles modifier if it was real: “Giggle Outbreak!”
-
-```luau
-getgenv().GIGGLE_SPAWN_CONFIG = {
-     Damage = 6,
-     AttackingTime = math.random(7, 10), -- The time giggle will be attacking for.
-     FallSpeed = 3,        -- Speed for when giggle spawns, can be mininum 2 and how high you want
-     
-     Stunnable = true,    -- If set to true, Giggle will be stunnable with glowstick
-     StunTime = 5, -- The time giggle will be stun for
-     
-     RagdollThrowForce = 50,    -- The Ragdoll's Force when its thrown
-     RagdollDissapears = true,  -- If set to true the ragdoll will dissapear once giggle finishes attacking.
-  
-     RoomSpawning = {
-          Enabled = true   -- If set to false, giggle will spawn around the player.
-     },
-     
-     PlayerSpawning = { -- This table will be used if Room Spawning is Disabled
-          MinRadius = -20,  -- The minimum distance giggle can spawn from the player.
-          MaxRadius = 20.  --  The maximum distance giggle can spawn from the player.
-     },
-     
-     SpawningKey = { -- Key for Spawning
-          Enabled = false,  -- If enabled once the key is pressed, giggle will spawn.
-          Key = "G"    -- Key that is used for spawning giggle
-     }
-}
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/DripCapybara/Test/refs/heads/main/Doors/GiggleSpawn.lua"))()```
-      		print("button pressed")
-  	end    
-})
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Inf crucifixanything",
-	Callback = function()
-	--[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-_G.Uses = 99999999999
-_G.Range = 999
-_G.OnAnything = true
-_G.Fail = false
-loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))() --no deivid-- --execute this instead--
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "troll face!",
-	Callback = function()
-	Trolling everyone whose name starts with the letter "u"
-
-```loadstring(game:HttpGet("https://api.hugebonus.xyz/scripts/TrollFaceSpawner.lua"))()```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "spiral lighter",
-	Callback = function()
-	<@&1314196270277066772> 
-here's the mischievous Lighter script (I somehow got confused with mischievous candle)
-```lua
-local Players = game:GetService("Players")
-local RunService = game:GetService("RunService")
-
-local highlightColor = Color3.new(1, 0, 0)
-local explosionSoundId = "rbxassetid://3802269741"
-local explosionTimeLimit = 1200
-
-local function applyToolEffects(tool)
-    if tool.Name == "Lighter" then
-        local handle = tool:FindFirstChild("Handle")
-        if handle then
-            handle.Color = Color3.new(1, 0, 0)
-            local soundOpen = handle:FindFirstChild("sound_open")
-            if soundOpen and soundOpen:IsA("Sound") then
-                soundOpen.SoundId = explosionSoundId
-            end
-
-            for _, descendant in ipairs(handle:GetDescendants()) do
-                if descendant:IsA("BasePart") or descendant:IsA("ParticleEmitter") or descendant:IsA("PointLight") then
-                    descendant.Color = Color3.new(1, 0, 0)
-                    if descendant:IsA("ParticleEmitter") then
-                        descendant.Texture = "rbxassetid://110886007258155"
-                    elseif descendant:IsA("PointLight") then
-                        descendant.Color = Color3.new(1, 0, 0)
-                        descendant.Brightness = 1.5
-                        descendant.Range = 16
-                    end
-                end
-            end
-        end
-
-        tool.TextureId = "rbxassetid://112508503632935"
-
-        task.spawn(function()
-            local heldTime = 0
-            while tool and tool.Parent and Players.LocalPlayer.Character:FindFirstChild(tool.Name) do
-                task.wait(1)
-                heldTime = heldTime + 1
-                if heldTime >= explosionTimeLimit then
-                    local explosion = Instance.new("Explosion")
-                    explosion.Position = Players.LocalPlayer.Character.HumanoidRootPart.Position
-                    explosion.Parent = workspace
-                    local explosionSound = Instance.new("Sound")
-                    explosionSound.SoundId = explosionSoundId
-                    explosionSound.PlayOnRemove = true
-                    explosionSound.Parent = explosion
-                    explosionSound:Destroy()
-                    Players.LocalPlayer.Character.Humanoid.Health = 0
-                end
-            end
-        end)
-    end
-end
-
-local function highlightFakeDoors()
-    for _, model in ipairs(workspace:GetDescendants()) do
-        if model:IsA("Model") and model.Name == "DoorFake" then
-            for _, part in ipairs(model:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    local highlight = Instance.new("Highlight")
-                    highlight.FillColor = highlightColor
-                    highlight.OutlineTransparency = 1
-                    highlight.Parent = part
-                end
-            end
-        end
-    end
-
-    workspace.DescendantAdded:Connect(function(descendant)
-        if descendant:IsA("Model") and descendant.Name == "DoorFake" then
-            for _, part in ipairs(descendant:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    local highlight = Instance.new("Highlight")
-                    highlight.FillColor = highlightColor
-                    highlight.OutlineTransparency = 1
-                    highlight.Parent = part
-                end
-            end
-        end
-    end)
-end
-
-Players.LocalPlayer.Backpack.ChildAdded:Connect(applyToolEffects)
-workspace.DescendantAdded:Connect(function(descendant)
-    if descendant:IsA("Tool") then
-        applyToolEffects(descendant)
-    end
-end)
-
-highlightFakeDoors()
-```
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "moon light lighter",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/obf_tzC4VKEz8q97nq1JEmMWTW2Ke86o75zoN5gE6DOB475Gn4H99HoKS9i7sSa4zU95.lua.txt"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Button!",
-	Callback = function()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Tab:AddButton({
-	Name = "VIRIDIS RIFT",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "wonder bottle!",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Wonder%20Bottle%20OFICIAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "  crucifix anything Christmas",
-	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Modhub-assets/refs/heads/main/ChristmasCrucifixFunctionless.lua"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "red crucifix",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "VIRIDIS RIFT",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "dozer spawn",
-	Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-OrionLib:Init()
-
