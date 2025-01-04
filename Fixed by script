@@ -1,0 +1,108 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "bako hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+    Name = "Tab 1",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+    Name = "bako hub"
+})
+
+OrionLib:MakeNotification({
+    Name = "bako hub!",
+    Content = "Notification content... what will it say??",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+
+Tab:AddButton({
+    Name = "moon light lighter",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Guiding-modhub/refs/heads/main/obf_tzC4VKEz8q97nq1JEmMWTW2Ke86o75zoN5gE6DOB475Gn4H99HoKS9i7sSa4zU95.lua.txt"))()
+        print("moon light lighter button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "Button!",
+    Callback = function()
+        print("button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "VIRIDIS RIFT",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/VIRIDIS%20RIFT%20ORIGINAL"))()
+        print("VIRIDIS RIFT button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "wonder bottle!",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Agadigas/Doors/refs/heads/main/Wonder%20Bottle%20OFICIAL"))()
+        print("wonder bottle button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "crucifix anything Christmas",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Teilsthebfdifan/Modhub-assets/refs/heads/main/ChristmasCrucifixFunctionless.lua"))()
+        print("crucifix anything Christmas button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "red crucifix",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
+        print("red crucifix button pressed")
+    end    
+})
+
+Tab:AddButton({
+    Name = "dozer spawn",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IdkMyNameLoll/34921473024732147312483297412/refs/heads/main/dozerspawner"))()
+        print("dozer spawn button pressed")
+    end    
+})
+
+Tab:AddToggle({
+    Name = "Toggle example",
+    Default = false,
+    Callback = function(Value)
+        print("Toggle value:", Value)
+    end    
+})
+
+Tab:AddColorpicker({
+    Name = "Colorpicker",
+    Default = Color3.fromRGB(255, 0, 0),
+    Callback = function(Value)
+        print("Colorpicker value:", Value)
+    end    
+})
+
+Tab:AddSlider({
+    Name = "Slider example",
+    Min = 0,
+    Max = 20,
+    Default = 5,
+    Color = Color3.fromRGB(255,255,255),
+    Increment = 1,
+    ValueName = "bananas",
+    Callback = function(Value)
+        print("Slider value:", Value)
+    end    
+})
+
+Tab:AddLabel("araz bako hub")
+Tab:AddParagraph("Paragraph Example", "Paragraph content")
+
+OrionLib:Init()
