@@ -61,7 +61,7 @@ Tab:AddButton({
     Name = "red crucifix",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LolSeek/SallyStuff/refs/heads/main/SallyPov"))()
-        print("red crucifix button pressed")
+        print("sally Pov pressed")
     end    
 })
 
