@@ -1,0 +1,3 @@
+local rush = game:GetObjects("rbxassetid://104922172815568")[1]
+rush.Parent = game.Players.LocalPlayer.Backpack
+require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).caption("Plushie made by shocker script's",true)
